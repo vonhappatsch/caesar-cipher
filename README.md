@@ -218,3 +218,5 @@ projeto, tendo em conta o desenvolvimento de suas _habilidades socioemocionais_:
 
 * [ ] Permite usar um `offset` (_deslocamento_) negativo
 * [ ] Cifra/descifra _outros_ caracteres (espaços, pontuação, `ã`, `á`, ...)
+
+![diagrama-de-blocos](https://github.com/vonhappatsch/caesar-cipher/blob/master/diagrama.png)
