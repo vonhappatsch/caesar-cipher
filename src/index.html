@@ -2,12 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,500,500i,600,700" rel="stylesheet">
   </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  <body class="main">
+    <header>
+      <h1>Cifra de César</h1>
+    </header>
+
+    <section id="cript">
+      <h2>Criptografe</h2>
+      <label>Insira a mensagem que deseja criptografar:</label>
+      <br>
+      <input id="textToEncode" type="text" />
+      <br><br>
+      <label>Insira a chave da criptografia:</label>
+      <br>
+      <input id="offsetEncode" type="text" />
+      <br>
+      <button onClick="getTextEncode()">Criptografe</button>
+      <p id="encoded"></p>
+    </section>
+
+    <section id="dec">
+      <h2>Decifre</h2>
+      <label>Insira a mensagem que deseja decifrar:</label>
+      <br>
+      <input id="textToDecode" type="text" />
+      <br><br>
+      <label>Insira a chave que foi usada na criptografia:</label>
+      <br>
+      <input id="offsetDecode" type="text" />
+      <br>
+      <button onClick="getTextDecode()">Decifre</button>
+      <p id="decoded"></p>
+    </section>
+
+    <footer>
+      <p>blablablah</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
