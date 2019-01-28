@@ -9,7 +9,7 @@ body {
   align-self: center;
 }
 
-header, section {
+section {
   padding: 30px;
 }
 
@@ -28,4 +28,26 @@ label, p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.testbutton {
+  font-family: 'trebuchet ms';
+  color: #1F1F1F !important;
+  font-size: 13px;
+  text-shadow: 1px 1px 0px #D9D9D9;
+  box-shadow: 1px 1px 1px #F9F9F9;
+  padding: 10px 25px;
+  border: 1px outset #575757;
+  background: #FCFCFC;
+  margin-top: 18px;
+}
+
+
+.testbutton:hover {
+  color: #6A5A6A !important;
+  background: #F2F2F2;
+  background: linear-gradient(top,  #F2F2F2,  #FFFFFF);
+  background: -ms-linear-gradient(top,  #F2F2F2,  #FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#FFFFFF));
+  background: -moz-linear-gradient(top,  #F2F2F2,  #FFFFFF);
 }

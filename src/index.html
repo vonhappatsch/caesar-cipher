@@ -13,35 +13,36 @@
     </header>
 
     <section id="cript">
-      <h2>Criptografe</h2>
+      <h2>Criptografando</h2>
       <label>Insira a mensagem que deseja criptografar:</label>
       <br>
-      <input id="textToEncode" type="text" />
+      <textarea id="textToEncode" rows="4" cols="50"></textarea>
       <br><br>
-      <label>Insira a chave da criptografia:</label>
+      <label>Insira o deslocamento do alfabeto? (a chave)</label>
       <br>
-      <input id="offsetEncode" type="text" />
+      <input id="offsetEncode"></input>
       <br>
-      <button onClick="getTextEncode()">Criptografe</button>
+      <button onClick="getTextEncode()" class="testbutton">Criptografe</button>
+      <br>
       <p id="encoded"></p>
     </section>
 
     <section id="dec">
-      <h2>Decifre</h2>
-      <label>Insira a mensagem que deseja decifrar:</label>
+      <h2>Decifrando</h2>
+      <label>Insira a mensagem que deseja descriptografar:</label>
       <br>
-      <input id="textToDecode" type="text" />
+      <textarea id="textToDecode" rows="4" cols="50"></textarea>
       <br><br>
       <label>Insira a chave que foi usada na criptografia:</label>
       <br>
-      <input id="offsetDecode" type="text" />
+      <input id="offsetDecode"></input>
       <br>
-      <button onClick="getTextDecode()">Decifre</button>
+      <button onClick="getTextDecode()" class="testbutton">Decifre</button>
       <p id="decoded"></p>
     </section>
 
     <footer>
-      <p>blablablah</p>
+      <p>< Jéssica Happatsch - Laboratoria ></p>
     </footer>
     <script src="script.js"></script>
   </body>
