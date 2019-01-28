@@ -33,8 +33,11 @@ O resultado é impresso na tela depois que o usuário insere a mensagem, a chave
 ![diagrama-de-blocos](https://github.com/vonhappatsch/caesar-cipher/blob/master/diagrama.png)
 
 Os **dados de entrada** são: Mensagem para criptografar ou Mensagem para decifrar e chave de deslocamento
+
 O **processo** é: Utilizando a fórmula matemática da Cifra de César, o processo necessário para criptografar uma mensagem é: ((CódigoASCIIdaLetra - CódigoASCIIdaPrimeiraLetraDoAlfabeto + offset) % 26) + CódigoASCIIdaPrimeiraLetraDoAlfabeto. Sendo 26 o tamanho do alfabeto. Para decifrar, seria necessário trocar apenas o sinal de adição por subtração antes do offset, assim voltando as letras da mensagem para suas posições iniciais. O processo é repetido da primeira até a última letra da mensagem, armazenando/concatenando o resultado em uma string vazia através do `for`.
+
 Os **dados de saída** são: Mensagem criptgrafada OU Mensagem decifrada
+
 `Recebe mensagem => Recebe Chave => Implementa a fórmula => Imprime mensagem de resultado`
 
 ## Checklist
