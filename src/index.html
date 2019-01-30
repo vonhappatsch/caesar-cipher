@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A pequena máquina de memes secretos</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,500,500i,600,700" rel="stylesheet">
   </head>
-  <body class="main">
-    <header>
-      <h1>Cifra de César</h1>
-    </header>
+  <body>
+    <div class="main">
+      <header>
+        <h1>É verdade esse bilete</h1>
+      </header>
 
-    <section id="cript">
-      <h2>Criptografando</h2>
-      <label>Insira a mensagem que deseja criptografar:</label>
-      <br>
-      <textarea id="textToEncode" rows="4" cols="50"></textarea>
-      <br><br>
-      <label>Insira o deslocamento do alfabeto? (a chave)</label>
-      <br>
-      <input id="offsetEncode"></input>
-      <br>
-      <button onClick="getTextEncode()" class="testbutton">Criptografe</button>
-      <br>
-      <p id="encoded"></p>
-    </section>
+      <section id="cript">
+        <h2>Criptografando</h2>
+        <label>Insira a mensagem que deseja criptografar:</label>
+        <br>
+        <textarea id="textToEncode" rows="4" cols="45"></textarea>
+        <br><br>
+        <label>Insira o deslocamento do alfabeto: (a chave)</label>
+        <br>
+        <input id="offsetEncode" type="number" />
+        <br>
+        <button onClick="getText('textToEncode', 'offsetEncode', encode, 'encoded')" class="testbutton">Criptografe</button>
+        <br>
+        <p id="encoded"></p>
+      </section>
 
-    <section id="dec">
-      <h2>Decifrando</h2>
-      <label>Insira a mensagem que deseja descriptografar:</label>
-      <br>
-      <textarea id="textToDecode" rows="4" cols="50"></textarea>
-      <br><br>
-      <label>Insira a chave que foi usada na criptografia:</label>
-      <br>
-      <input id="offsetDecode"></input>
-      <br>
-      <button onClick="getTextDecode()" class="testbutton">Decifre</button>
-      <p id="decoded"></p>
-    </section>
+      <section id="dec">
+        <h2>Decifrando</h2>
+        <label>Insira a mensagem que deseja descriptografar:</label>
+        <br>
+        <textarea id="textToDecode" rows="4" cols="45"></textarea>
+        <br><br>
+        <label>Insira a chave que foi usada na criptografia:</label>
+        <br>
+        <input id="offsetDecode" type="number" />
+        <br>
+        <button onClick="getText('textToDecode', 'offsetDecode', decode, 'decoded')" class="testbutton">Decifre</button>
+        <p id="decoded"></p>
+      </section>
 
-    <footer>
-      <p>< Jéssica Happatsch - Laboratoria ></p>
-    </footer>
-    <script src="script.js"></script>
+      <footer>
+        <p>< Jéssica Happatsch - Laboratoria ></p>
+      </footer>
+      <script src="cipher.js"></script>
+      <script src="tests.js"></script>
+    </div>
   </body>
 </html>
