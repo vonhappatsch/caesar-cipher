@@ -23,6 +23,7 @@ function encode(offset, string) {
 function decode(offset, string) {
   let final = "";
 
+
   for (let i = 0; i < string.length; i++) {
     let letter = string.charCodeAt(i);
     if ((letter >= 65) && (letter <= 90)) {
@@ -42,6 +43,6 @@ function getText(textfield, offsetfield, functionToExecute, resultfield) {
   const key = parseInt(document.getElementById(offsetfield).value);
   const text = document.getElementById(textfield).value;
   const result = functionToExecute(key, text);
-
+  
   document.getElementById(resultfield).innerHTML = "<b>O resultado é</b>:<br> " + result;
 }

@@ -1,19 +1,36 @@
+body {
+  background-image: url(https://i.dlpng.com/static/png/399467_preview.png);
+  background-size: 50%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
 .main {
   display: flex;
+  align-self: center;
   align-items: center;
-  justify-content: space-evenly;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 section {
   padding: 30px;
-  max-width: 900px;
+  color: #0d0c0d;
+  background-color: #fcfcfc;
+  justify-content: space-evenly;
+}
+
+section p {
+  max-width: 310px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 h1 {
   font-family: 'Major Mono Display', monospace;
   font-size: 50px;
-  justify-content: space-between;
+  align-self: center;
 }
 
 h2 {
@@ -22,16 +39,18 @@ h2 {
   font-size: 25px;
 }
 
-label, #encoded, #decoded {
+label, #encoded, #decoded, textarea, input {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  width: 300px;
 }
 
-p {
+footer p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 12px;
+  padding-top: 10px;
 }
 
 .testbutton {
