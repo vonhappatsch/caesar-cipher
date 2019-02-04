@@ -3,54 +3,79 @@ body {
   background-size: 50%;
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .main {
   display: flex;
-  align-self: center;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 section {
+  display: none;
   padding: 30px;
   color: #0d0c0d;
   background-color: #fcfcfc;
   justify-content: space-evenly;
 }
 
-section p {
+section.show {
+  display: block;
+}
+
+p {    
   max-width: 310px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
+}
+
+header {
+  background-image: url(https://newvitruvian.com/images/notebook-clipart-torn-newspaper-12.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  font-family: 'Major Mono Display', monospace;
-  font-size: 50px;
-  align-self: center;
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 25px;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 60px;
+  text-shadow: 2px 0px 16px rgba(15,14,15,0.21);
+  margin-top: 10px;
 }
 
 label, #encoded, #decoded, textarea, input {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   width: 300px;
 }
 
+textarea, input {
+  -webkit-box-shadow: 5px 5px 1px 0px #0C0C0C; 
+  -moz-box-shadow: 5px 5px 1px 0px #0C0C0C;
+  box-shadow: 5px 5px 1px 0px #0C0C0C;
+}
+
+span a {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 45px;
+  text-decoration: none;
+  color: #0d0c0d;
+  padding: 0px 0px 30px 0px;
+  text-shadow: 4px 4px 2px rgba(3,13,20,0.21);
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
 footer p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  margin-top: 20px;
 }
 
 .testbutton {
@@ -73,4 +98,8 @@ footer p {
   background: -ms-linear-gradient(top,  #F2F2F2,  #FFFFFF);
   background: -webkit-gradient(linear, left top, left bottom, from(#F2F2F2), to(#FFFFFF));
   background: -moz-linear-gradient(top,  #F2F2F2,  #FFFFFF);
+}
+
+.testbutton1 {
+  margin-left: 88px;
 }

@@ -1,3 +1,17 @@
+const start = document.querySelector(".start");
+const cipher = document.querySelector(".cipher");
+
+const about = document.querySelector(".about");
+const more = document.querySelector(".more");
+
+start.addEventListener("click", function() {
+    cipher.classList.toggle("show")
+}, true);
+
+about.addEventListener("click", function() {
+    more.classList.toggle("show")
+}, true);
+
 function mod(n, m) {
   return ((n % m) + m) % m;
 }
@@ -41,8 +55,8 @@ function decode(offset, string) {
 
 function getText(textfield, offsetfield, functionToExecute, resultfield) {
   const key = parseInt(document.getElementById(offsetfield).value);
-  const text = document.getElementById(textfield).value;
-  const result = functionToExecute(key, text);
-  
-  document.getElementById(resultfield).innerHTML = "<b>O resultado é</b>:<br> " + result;
+  const text = document.getElementById(textfield);
+  const result = functionToExecute(key, text.value);
+
+  text.value = result;
 }

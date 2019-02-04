@@ -5,51 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagens secretas com Cifra de César</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,500,500i,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Reenie+Beanie|Roboto:300,400,400i,500,500i,700" rel="stylesheet">    </head>
   </head>
   <body>
     <div class="main">
       <header>
-        <h1>CSI BR</h1>
+        <h1>É verdade esse bilete</h1>
       </header>
 
-      <section id="about">
+      <span><a href="#" class="start">Clique aqui</a></span>
+      <section class="cipher">
+        <h2></h2>
+        <label>Insira aqui sua mensagem:</label>
+        <br>
+        <textarea id="text" rows="4"></textarea>
+        <br><br>
+        <label>Insira o deslocamento desejado: <small>chave</small></label>
+        <br>
+        <input id="offset" type="number" />
+        <br>
+        <button onClick="getText('text', 'offset', encode, 'encoded')" class="testbutton">Criptografe</button>
+        <button onClick="getText('text', 'offset', decode, 'decoded')" class="testbutton testbutton1"> Decifre </button>
+      </section>
+      <br>     
+      <span><a href="#" class="about">Saiba mais</a></span>
+      <section class="more">
         <p>
-          Deseja enviar ou receber mensagens com mais privacidade? <br>O CSI BR está aqui para isso! Basta inserir a mensagem e chave nos locais indicados. <br><br>
+          Deseja enviar ou receber mensagens com mais privacidade? <br> Basta inserir a mensagem e chave nos locais indicados e pronto! <i>É verdade esse bilete.</i><br><br>
           Você pode criptografar ou decifrar uma mensagem usando a chave que quiser de acordo com a <mark>Cifra de César</mark>. <br>
           Ela irá deslocar o alfabeto em quantas vezes você decidir pelo número que inserir na chave. <br><br>
           Assim, caso esteja tentando montar uma surpresa ou manter algum segredo, fica bem mais fácil do que cochichar! Vamos lá? :) <br>
         </p>
-      </section>
-
-      <section id="cript">
-        <h2>Criptografando</h2>
-        <label>Insira aqui sua mensagem:</label>
-        <br>
-        <textarea id="textToEncode" rows="4"></textarea>
-        <br><br>
-        <label>Insira o deslocamento desejado: <small>chave</small></label>
-        <br>
-        <input id="offsetEncode" type="number" />
-        <br>
-        <button onClick="getText('textToEncode', 'offsetEncode', encode, 'encoded')" class="testbutton">Criptografe</button>
-        <br>
-        <p id="encoded"></p>
-      </section>
-
-      <section id="dec">
-        <h2>Decifrando</h2>
-        <label>Insira a mensagem recebida:</label>
-        <br>
-        <textarea id="textToDecode" rows="4"></textarea>
-        <br><br>
-        <label>Insira a chave usada na criptografia:</label>
-        <br>
-        <input id="offsetDecode" type="number" />
-        <br>
-        <button onClick="getText('textToDecode', 'offsetDecode', decode, 'decoded')" class="testbutton">Decifre</button>
-        <br>
-        <p id="decoded"></p>
       </section>
 
       <footer>
