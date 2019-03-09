@@ -1,8 +1,8 @@
 const start = document.querySelector(".start");
 const cipher = document.querySelector(".cipher");
-
 const about = document.querySelector(".about");
 const more = document.querySelector(".more");
+
 
 start.addEventListener("click", function() {
     cipher.classList.toggle("show")
@@ -12,9 +12,11 @@ about.addEventListener("click", function() {
     more.classList.toggle("show")
 }, true);
 
+
 function mod(n, m) {
   return ((n % m) + m) % m;
 }
+
 
 function encode(offset, string) {
   let final = ""; 
@@ -34,9 +36,9 @@ function encode(offset, string) {
   return final;
 }
 
+
 function decode(offset, string) {
   let final = "";
-
 
   for (let i = 0; i < string.length; i++) {
     let letter = string.charCodeAt(i);
@@ -53,7 +55,8 @@ function decode(offset, string) {
   return final;
 }
 
-function getText(textfield, offsetfield, functionToExecute, resultfield) {
+
+function getText(textfield, offsetfield, functionToExecute) {
   const key = parseInt(document.getElementById(offsetfield).value);
   const text = document.getElementById(textfield);
   const result = functionToExecute(key, text.value);

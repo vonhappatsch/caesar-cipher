@@ -12,53 +12,54 @@ body {
   flex-direction: column;
 }
 
-section {
+.content {
   display: none;
   padding: 30px;
+  margin-top: 1vh;
   color: #0d0c0d;
   background-color: #fcfcfc;
   justify-content: space-evenly;
 }
 
-section.show {
+.content.show {
   display: block;
 }
 
-p {    
+.text {    
   max-width: 310px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
 
-header {
+.top {
   background-image: url(https://newvitruvian.com/images/notebook-clipart-torn-newspaper-12.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-h1 {
+.title {
   font-family: 'Reenie Beanie', cursive;
   font-size: 60px;
   text-shadow: 2px 0px 16px rgba(15,14,15,0.21);
   margin-top: 10px;
 }
 
-label, #encoded, #decoded, textarea, input {
+.lettering, #encoded, #decoded {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   width: 300px;
 }
 
-textarea, input {
+.shadow {
   -webkit-box-shadow: 5px 5px 1px 0px #0C0C0C; 
   -moz-box-shadow: 5px 5px 1px 0px #0C0C0C;
   box-shadow: 5px 5px 1px 0px #0C0C0C;
 }
 
-span a {
+.btn {
   font-family: 'Reenie Beanie', cursive;
   font-size: 45px;
   text-decoration: none;
@@ -67,11 +68,11 @@ span a {
   text-shadow: 4px 4px 2px rgba(3,13,20,0.21);
 }
 
-span a:hover {
+.btn a:hover {
   text-decoration: underline;
 }
 
-footer p {
+footer .text {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 11px;

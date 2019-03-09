@@ -9,37 +9,39 @@
   </head>
   <body>
     <div class="main">
-      <header>
-        <h1>É verdade esse bilete</h1>
+      <header class="top">
+        <h1 class="title">É verdade esse bilete</h1>
       </header>
-
-      <span><a href="#" class="start">Clique aqui</a></span>
-      <section class="cipher">
-        <h2></h2>
-        <label>Insira aqui sua mensagem:</label>
-        <br>
-        <textarea id="text" rows="4"></textarea>
-        <br><br>
-        <label>Insira o deslocamento desejado: <small>chave</small></label>
-        <br>
-        <input id="offset" type="number" />
-        <br>
-        <button onClick="getText('text', 'offset', encode, 'encoded')" class="testbutton">Criptografe</button>
-        <button onClick="getText('text', 'offset', decode, 'decoded')" class="testbutton testbutton1"> Decifre </button>
-      </section>
-      <br>     
-      <span><a href="#" class="about">Saiba mais</a></span>
-      <section class="more">
-        <p>
-          Deseja enviar ou receber mensagens com mais privacidade? <br> Basta inserir a mensagem e chave nos locais indicados e pronto! <i>É verdade esse bilete.</i><br><br>
-          Você pode criptografar ou decifrar uma mensagem usando a chave que quiser de acordo com a <mark>Cifra de César</mark>. <br>
-          Ela irá deslocar o alfabeto em quantas vezes você decidir pelo número que inserir na chave. <br><br>
-          Assim, caso esteja tentando montar uma surpresa ou manter algum segredo, fica bem mais fácil do que cochichar! Vamos lá? :) <br>
-        </p>
-      </section>
-
+      <main>
+        <span><a href="#" class="start btn">Clique aqui</a></span>
+        <section class="cipher content">
+          <h2></h2>
+          <form>
+            <label class="lettering">Insira aqui sua mensagem:</label>
+            <br>
+            <textarea class="shadow lettering" id="text" rows="4"></textarea>
+            <br><br>
+            <label class="lettering">Insira o deslocamento desejado: <small>chave</small></label>
+            <br>
+            <input class="shadow lettering" id="offset" type="number" />
+            <br>
+            <button onClick="getText('text', 'offset', encode, 'encoded')" class="testbutton">Criptografe</button>
+            <button onClick="getText('text', 'offset', decode, 'decoded')" class="testbutton testbutton1"> Decifre </button>
+          </form>
+        </section>
+        <br>     
+        <span><a href="#" class="about btn">Saiba mais</a></span>
+        <section class="more content">
+          <p class="text">
+            Deseja enviar ou receber mensagens com mais privacidade? <br> Basta inserir a mensagem e chave nos locais indicados e pronto! <i>É verdade esse bilete.</i><br><br>
+            Você pode criptografar ou decifrar uma mensagem usando a chave que quiser de acordo com a <mark>Cifra de César</mark>. <br>
+            Ela irá deslocar o alfabeto em quantas vezes você decidir pelo número que inserir na chave. <br><br>
+            Assim, caso esteja tentando montar uma surpresa ou manter algum segredo, fica bem mais fácil do que cochichar! Vamos lá? :) <br>
+          </p>
+        </section>
+      </main>
       <footer>
-        <p>< Jéssica Happatsch - Laboratoria ></p>
+        <p class="text">< Jéssica Happatsch - Laboratoria ></p>
       </footer>
       <script src="cipher.js"></script>
       <script src="tests.js"></script>
